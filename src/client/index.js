@@ -3,7 +3,6 @@ const printPosition = document.getElementById("position");
 const connectionStatus = document.getElementById("connection");
 const connectionButton = document.getElementById("connection-button");
 const mousepadAnalog = document.getElementById("analog");
-// Script that gets the mouse sliding on the mousepad when clicking or touching position on the mousepad and logs the position of the mousepad
 
 const mousePositionIncrease = {
 	x: 0,
@@ -17,7 +16,6 @@ const mousePosition = {
 
 var socket = false;
 var clicking = false;
-// Function that gets the mouse position and increases the variables based on the position and in a scale of 0 to 100 relative to the center of the mousepad container (e.g. if the mouse is at the top of the mousepad, the y variable will increase )
 
 function initSocket(connect = true) {
 	if (connect) {
